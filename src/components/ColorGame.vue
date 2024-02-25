@@ -109,17 +109,6 @@
           this.start()
         }
       },
-      stop() {
-        // отказался от кнопки из-за бага времени clearInterval
-        clearInterval(this.game);
-        this.game = null;
-        this.viewer = false;
-        this.time = null;
-        this.error = true;
-        this.answer = 0;
-        this.level = false;
-        this.startButton = true;
-      },
       chooseColor(item) {
         if (this.viewer === true) {
           this.genAudio(item);
