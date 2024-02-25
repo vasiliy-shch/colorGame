@@ -31,7 +31,7 @@
           >
           </div>
         </div>
-        <button @click="start" class="game__button">Старт</button>
+        <button v-if="startButton" @click="start" class="game__button">Старт</button>
         
         <span class="game__counter_error" v-show="!level">Выберите уровень</span>
       </div>
